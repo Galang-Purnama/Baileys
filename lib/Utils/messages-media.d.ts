@@ -1,9 +1,6 @@
 /// <reference types="node" />
-<<<<<<< HEAD
 /// <reference types="node" />
 /// <reference types="node" />
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 import { Boom } from '@hapi/boom';
 import { AxiosRequestConfig } from 'axios';
 import type { Logger } from 'pino';
@@ -23,28 +20,19 @@ export declare const extractImageThumb: (bufferOrFilePath: Readable | Buffer | s
     };
 }>;
 export declare const encodeBase64EncodedStringForUpload: (b64: string) => string;
-<<<<<<< HEAD
 export declare const generateProfilePicture: (mediaUpload: WAMediaUpload, custom: boolean) => Promise<{
-=======
-export declare const generateProfilePicture: (mediaUpload: WAMediaUpload) => Promise<{
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     img: Buffer;
 }>;
 /** gets the SHA256 of the given media message */
 export declare const mediaMessageSHA256B64: (message: WAMessageContent) => string | null | undefined;
 export declare function getAudioDuration(buffer: Buffer | string | Readable): Promise<number | undefined>;
 export declare const toReadable: (buffer: Buffer) => Readable;
-<<<<<<< HEAD
 /**
   referenced from and modifying https://github.com/wppconnect-team/wa-js/blob/main/src/chat/functions/prepareAudioWaveform.ts
  */
 export declare function getAudioWaveform(buffer: Buffer | string | Readable, logger?: Logger): Promise<Uint8Array | undefined>;
 export declare const toBuffer: (stream: Readable) => Promise<Buffer>;
 export declare const getStream: (item: WAMediaUpload, opts?: AxiosRequestConfig) => Promise<{
-=======
-export declare const toBuffer: (stream: Readable) => Promise<Buffer>;
-export declare const getStream: (item: WAMediaUpload, opts?: AxiosRequestConfig<any> | undefined) => Promise<{
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     readonly stream: Readable;
     readonly type: "buffer";
 } | {
@@ -70,11 +58,7 @@ export declare function generateThumbnail(file: string, mediaType: 'video' | 'im
 export declare const getHttpStream: (url: string | URL, options?: AxiosRequestConfig & {
     isStream?: true;
 }) => Promise<Readable>;
-<<<<<<< HEAD
 type EncryptedStreamOptions = {
-=======
-declare type EncryptedStreamOptions = {
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     saveOriginalFileIfRequired?: boolean;
     logger?: Logger;
     opts?: AxiosRequestConfig;
@@ -89,11 +73,7 @@ export declare const encryptedStream: (media: WAMediaUpload, mediaType: MediaTyp
     fileLength: number;
     didSaveToTmpPath: boolean;
 }>;
-<<<<<<< HEAD
 export type MediaDownloadOptions = {
-=======
-export declare type MediaDownloadOptions = {
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     startByte?: number;
     endByte?: number;
     options?: AxiosRequestConfig<any>;
