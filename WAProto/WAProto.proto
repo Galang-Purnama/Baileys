@@ -99,7 +99,6 @@ message BizIdentityInfo {
     }
 }
 
-<<<<<<< HEAD
 message BotAvatarMetadata {
     optional uint32 sentiment = 1;
     repeated PlaybackMetadata dynamicVideoList = 2;
@@ -122,8 +121,6 @@ message BotMetadata {
     optional BotAvatarMetadata avatarMetadata = 1;
 }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 message CertChain {
     optional NoiseCertificate leaf = 1;
     optional NoiseCertificate intermediate = 2;
@@ -289,10 +286,7 @@ message ClientPayload {
         optional string localeCountryIso31661Alpha2 = 12;
         optional string deviceBoard = 13;
         optional string deviceExpId = 14;
-<<<<<<< HEAD
         optional DeviceType deviceType = 15;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         message AppVersion {
             optional uint32 primary = 1;
             optional uint32 secondary = 2;
@@ -301,7 +295,6 @@ message ClientPayload {
             optional uint32 quinary = 5;
         }
         
-<<<<<<< HEAD
         enum DeviceType {
             PHONE = 0;
             TABLET = 1;
@@ -309,8 +302,6 @@ message ClientPayload {
             WEARABLE = 3;
             VR = 4;
         }
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         enum Platform {
             ANDROID = 0;
             IOS = 1;
@@ -563,10 +554,7 @@ message DeviceProps {
         WEAR_OS = 18;
         AR_WRIST = 19;
         AR_DEVICE = 20;
-<<<<<<< HEAD
         UWP = 21;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     }
 }
 
@@ -598,7 +586,6 @@ message ExternalBlobReference {
     optional bytes fileEncSha256 = 6;
 }
 
-<<<<<<< HEAD
 message FutureMessageData {
     optional BotData botData = 1;
 }
@@ -608,8 +595,6 @@ message FutureproofMessageSecretMessage {
     required FutureMessageData futureMessageData = 2;
 }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 message GlobalSettings {
     optional WallpaperSettings lightThemeWallpaper = 1;
     optional MediaVisibility mediaVisibility = 2;
@@ -849,10 +834,7 @@ message Message {
     optional PollCreationMessage pollCreationMessageV3 = 64;
     optional ScheduledCallEditMessage scheduledCallEditMessage = 65;
     optional VideoMessage ptvMessage = 66;
-<<<<<<< HEAD
     optional FutureProofMessage botInvokeMessage = 67;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     message AppStateFatalExceptionNotification {
         repeated string collectionNames = 1;
         optional int64 timestamp = 2;
@@ -905,7 +887,6 @@ message Message {
         optional bool viewOnce = 21;
     }
     
-<<<<<<< HEAD
     message BotFeedbackMessage {
         optional MessageKey messageKey = 1;
         optional BotFeedbackKind kind = 2;
@@ -921,8 +902,6 @@ message Message {
         }
     }
     
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     message ButtonsMessage {
         optional string contentText = 6;
         optional string footerText = 7;
@@ -1242,22 +1221,16 @@ message Message {
             Message.InteractiveMessage.ShopMessage shopStorefrontMessage = 4;
             Message.InteractiveMessage.CollectionMessage collectionMessage = 5;
             Message.InteractiveMessage.NativeFlowMessage nativeFlowMessage = 6;
-<<<<<<< HEAD
             Message.InteractiveMessage.CarouselMessage carouselMessage = 7;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         }
         message Body {
             optional string text = 1;
         }
         
-<<<<<<< HEAD
         message CarouselMessage {
             repeated Message.InteractiveMessage cards = 1;
         }
         
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         message CollectionMessage {
             optional string bizJid = 1;
             optional string id = 2;
@@ -1635,10 +1608,7 @@ message Message {
         optional int64 timestampMs = 15;
         optional Message.PeerDataOperationRequestMessage peerDataOperationRequestMessage = 16;
         optional Message.PeerDataOperationRequestResponseMessage peerDataOperationRequestResponseMessage = 17;
-<<<<<<< HEAD
         optional Message.BotFeedbackMessage botFeedbackMessage = 18;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         enum Type {
             REVOKE = 0;
             EPHEMERAL_SETTING = 3;
@@ -1653,11 +1623,8 @@ message Message {
             MESSAGE_EDIT = 14;
             PEER_DATA_OPERATION_REQUEST_MESSAGE = 16;
             PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE = 17;
-<<<<<<< HEAD
             REQUEST_WELCOME_MESSAGE = 18;
             BOT_FEEDBACK_MESSAGE = 19;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         }
     }
     
@@ -1827,11 +1794,8 @@ message MessageContextInfo {
     optional bytes messageSecret = 3;
     optional bytes paddingBytes = 4;
     optional uint32 messageAddOnDurationInSecs = 5;
-<<<<<<< HEAD
     optional bytes botMessageSecret = 6;
     optional BotMetadata botMetadata = 7;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 }
 
 message MessageKey {
@@ -1841,15 +1805,12 @@ message MessageKey {
     optional string participant = 4;
 }
 
-<<<<<<< HEAD
 message MessageSecretMessage {
     optional sfixed32 version = 1;
     optional bytes encIv = 2;
     optional bytes encPayload = 3;
 }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 message Money {
     optional int64 value = 1;
     optional uint32 offset = 2;
@@ -2673,10 +2634,7 @@ message WebMessageInfo {
     optional string originalSelfAuthorUserJidString = 51;
     optional uint64 revokeMessageTimestamp = 52;
     optional PinInChat pinInChat = 54;
-<<<<<<< HEAD
     optional FutureproofMessageSecretMessage futureproofMessageSecretMessage = 55;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     enum BizPrivacyStatus {
         E2EE = 0;
         FB = 2;
@@ -2875,10 +2833,7 @@ message WebMessageInfo {
         PAYMENT_INVITE_SETUP_INVITEE_SEND_AND_RECEIVE = 180;
         LINKED_GROUP_CALL_START = 181;
         REPORT_TO_ADMIN_ENABLED_STATUS = 182;
-<<<<<<< HEAD
         EMPTY_SUBGROUP_CREATE = 183;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     }
 }
 

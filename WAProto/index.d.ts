@@ -1214,7 +1214,6 @@ export namespace proto {
         }
     }
 
-<<<<<<< HEAD
     /** Properties of a BotAvatarMetadata. */
     interface IBotAvatarMetadata {
 
@@ -1614,8 +1613,6 @@ export namespace proto {
         public toJSON(): { [k: string]: any };
     }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     /** Properties of a CertChain. */
     interface ICertChain {
 
@@ -3090,12 +3087,9 @@ export namespace proto {
 
             /** UserAgent deviceExpId */
             deviceExpId?: (string|null);
-<<<<<<< HEAD
 
             /** UserAgent deviceType */
             deviceType?: (proto.ClientPayload.UserAgent.DeviceType|null);
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         }
 
         /** Represents a UserAgent. */
@@ -3149,12 +3143,9 @@ export namespace proto {
             /** UserAgent deviceExpId. */
             public deviceExpId: string;
 
-<<<<<<< HEAD
             /** UserAgent deviceType. */
             public deviceType: proto.ClientPayload.UserAgent.DeviceType;
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
             /**
              * Creates a new UserAgent instance using the specified properties.
              * @param [properties] Properties to set
@@ -3342,7 +3333,6 @@ export namespace proto {
                 public toJSON(): { [k: string]: any };
             }
 
-<<<<<<< HEAD
             /** DeviceType enum. */
             enum DeviceType {
                 PHONE = 0,
@@ -3352,8 +3342,6 @@ export namespace proto {
                 VR = 4
             }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
             /** Platform enum. */
             enum Platform {
                 ANDROID = 0,
@@ -5247,12 +5235,8 @@ export namespace proto {
             ANDROID_AMBIGUOUS = 17,
             WEAR_OS = 18,
             AR_WRIST = 19,
-<<<<<<< HEAD
             AR_DEVICE = 20,
             UWP = 21
-=======
-            AR_DEVICE = 20
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         }
     }
 
@@ -5668,7 +5652,6 @@ export namespace proto {
         public toJSON(): { [k: string]: any };
     }
 
-<<<<<<< HEAD
     /** Properties of a FutureMessageData. */
     interface IFutureMessageData {
 
@@ -5855,8 +5838,6 @@ export namespace proto {
         public toJSON(): { [k: string]: any };
     }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     /** Properties of a GlobalSettings. */
     interface IGlobalSettings {
 
@@ -8428,12 +8409,9 @@ export namespace proto {
 
         /** Message ptvMessage */
         ptvMessage?: (proto.Message.IVideoMessage|null);
-<<<<<<< HEAD
 
         /** Message botInvokeMessage */
         botInvokeMessage?: (proto.Message.IFutureProofMessage|null);
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     }
 
     /** Represents a Message. */
@@ -8613,12 +8591,9 @@ export namespace proto {
         /** Message ptvMessage. */
         public ptvMessage?: (proto.Message.IVideoMessage|null);
 
-<<<<<<< HEAD
         /** Message botInvokeMessage. */
         public botInvokeMessage?: (proto.Message.IFutureProofMessage|null);
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         /**
          * Creates a new Message instance using the specified properties.
          * @param [properties] Properties to set
@@ -9532,7 +9507,6 @@ export namespace proto {
             public toJSON(): { [k: string]: any };
         }
 
-<<<<<<< HEAD
         /** Properties of a BotFeedbackMessage. */
         interface IBotFeedbackMessage {
 
@@ -9649,8 +9623,6 @@ export namespace proto {
             }
         }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         /** Properties of a ButtonsMessage. */
         interface IButtonsMessage {
 
@@ -12929,12 +12901,9 @@ export namespace proto {
 
             /** InteractiveMessage nativeFlowMessage */
             nativeFlowMessage?: (proto.Message.InteractiveMessage.INativeFlowMessage|null);
-<<<<<<< HEAD
 
             /** InteractiveMessage carouselMessage */
             carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage|null);
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         }
 
         /** Represents an InteractiveMessage. */
@@ -12967,16 +12936,11 @@ export namespace proto {
             /** InteractiveMessage nativeFlowMessage. */
             public nativeFlowMessage?: (proto.Message.InteractiveMessage.INativeFlowMessage|null);
 
-<<<<<<< HEAD
             /** InteractiveMessage carouselMessage. */
             public carouselMessage?: (proto.Message.InteractiveMessage.ICarouselMessage|null);
 
             /** InteractiveMessage interactiveMessage. */
             public interactiveMessage?: ("shopStorefrontMessage"|"collectionMessage"|"nativeFlowMessage"|"carouselMessage");
-=======
-            /** InteractiveMessage interactiveMessage. */
-            public interactiveMessage?: ("shopStorefrontMessage"|"collectionMessage"|"nativeFlowMessage");
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 
             /**
              * Creates a new InteractiveMessage instance using the specified properties.
@@ -13141,7 +13105,6 @@ export namespace proto {
                 public toJSON(): { [k: string]: any };
             }
 
-<<<<<<< HEAD
             /** Properties of a CarouselMessage. */
             interface ICarouselMessage {
 
@@ -13232,8 +13195,6 @@ export namespace proto {
                 public toJSON(): { [k: string]: any };
             }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
             /** Properties of a CollectionMessage. */
             interface ICollectionMessage {
 
@@ -18158,12 +18119,9 @@ export namespace proto {
 
             /** ProtocolMessage peerDataOperationRequestResponseMessage */
             peerDataOperationRequestResponseMessage?: (proto.Message.IPeerDataOperationRequestResponseMessage|null);
-<<<<<<< HEAD
 
             /** ProtocolMessage botFeedbackMessage */
             botFeedbackMessage?: (proto.Message.IBotFeedbackMessage|null);
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         }
 
         /** Represents a ProtocolMessage. */
@@ -18217,12 +18175,9 @@ export namespace proto {
             /** ProtocolMessage peerDataOperationRequestResponseMessage. */
             public peerDataOperationRequestResponseMessage?: (proto.Message.IPeerDataOperationRequestResponseMessage|null);
 
-<<<<<<< HEAD
             /** ProtocolMessage botFeedbackMessage. */
             public botFeedbackMessage?: (proto.Message.IBotFeedbackMessage|null);
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
             /**
              * Creates a new ProtocolMessage instance using the specified properties.
              * @param [properties] Properties to set
@@ -18310,13 +18265,9 @@ export namespace proto {
                 SHARE_PHONE_NUMBER = 11,
                 MESSAGE_EDIT = 14,
                 PEER_DATA_OPERATION_REQUEST_MESSAGE = 16,
-<<<<<<< HEAD
                 PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE = 17,
                 REQUEST_WELCOME_MESSAGE = 18,
                 BOT_FEEDBACK_MESSAGE = 19
-=======
-                PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE = 17
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
             }
         }
 
@@ -20197,15 +20148,12 @@ export namespace proto {
 
         /** MessageContextInfo messageAddOnDurationInSecs */
         messageAddOnDurationInSecs?: (number|null);
-<<<<<<< HEAD
 
         /** MessageContextInfo botMessageSecret */
         botMessageSecret?: (Uint8Array|null);
 
         /** MessageContextInfo botMetadata */
         botMetadata?: (proto.IBotMetadata|null);
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     }
 
     /** Represents a MessageContextInfo. */
@@ -20232,15 +20180,12 @@ export namespace proto {
         /** MessageContextInfo messageAddOnDurationInSecs. */
         public messageAddOnDurationInSecs: number;
 
-<<<<<<< HEAD
         /** MessageContextInfo botMessageSecret. */
         public botMessageSecret: Uint8Array;
 
         /** MessageContextInfo botMetadata. */
         public botMetadata?: (proto.IBotMetadata|null);
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         /**
          * Creates a new MessageContextInfo instance using the specified properties.
          * @param [properties] Properties to set
@@ -20420,7 +20365,6 @@ export namespace proto {
         public toJSON(): { [k: string]: any };
     }
 
-<<<<<<< HEAD
     /** Properties of a MessageSecretMessage. */
     interface IMessageSecretMessage {
 
@@ -20523,8 +20467,6 @@ export namespace proto {
         public toJSON(): { [k: string]: any };
     }
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     /** Properties of a Money. */
     interface IMoney {
 
@@ -31525,12 +31467,9 @@ export namespace proto {
 
         /** WebMessageInfo pinInChat */
         pinInChat?: (proto.IPinInChat|null);
-<<<<<<< HEAD
 
         /** WebMessageInfo futureproofMessageSecretMessage */
         futureproofMessageSecretMessage?: (proto.IFutureproofMessageSecretMessage|null);
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     }
 
     /** Represents a WebMessageInfo. */
@@ -31674,12 +31613,9 @@ export namespace proto {
         /** WebMessageInfo pinInChat. */
         public pinInChat?: (proto.IPinInChat|null);
 
-<<<<<<< HEAD
         /** WebMessageInfo futureproofMessageSecretMessage. */
         public futureproofMessageSecretMessage?: (proto.IFutureproofMessageSecretMessage|null);
 
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         /**
          * Creates a new WebMessageInfo instance using the specified properties.
          * @param [properties] Properties to set
@@ -31955,12 +31891,8 @@ export namespace proto {
             PAYMENT_INVITE_SETUP_INVITEE_RECEIVE_ONLY = 179,
             PAYMENT_INVITE_SETUP_INVITEE_SEND_AND_RECEIVE = 180,
             LINKED_GROUP_CALL_START = 181,
-<<<<<<< HEAD
             REPORT_TO_ADMIN_ENABLED_STATUS = 182,
             EMPTY_SUBGROUP_CREATE = 183
-=======
-            REPORT_TO_ADMIN_ENABLED_STATUS = 182
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         }
     }
 
