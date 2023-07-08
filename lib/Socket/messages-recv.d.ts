@@ -8,11 +8,7 @@ export declare const makeMessagesRecvSocket: (config: SocketConfig) => {
     rejectCall: (callId: string, callFrom: string) => Promise<void>;
     getPrivacyTokens: (jids: string[]) => Promise<BinaryNode>;
     assertSessions: (jids: string[], force: boolean) => Promise<boolean>;
-<<<<<<< HEAD
     relayMessage: (jid: string, message: proto.IMessage, { messageId: msgId, participant, additionalAttributes, useUserDevicesCache, cachedGroupMetadata, statusJidList }: MessageRelayOptions) => Promise<string>;
-=======
-    relayMessage: (jid: string, message: proto.IMessage, { messageId: msgId, participant, additionalAttributes, useUserDevicesCache, cachedGroupMetadata }: MessageRelayOptions) => Promise<string>;
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     sendReceipt: (jid: string, participant: string | undefined, messageIds: string[], type: MessageReceiptType) => Promise<void>;
     sendReceipts: (keys: proto.IMessageKey[], type: MessageReceiptType) => Promise<void>;
     readMessages: (keys: proto.IMessageKey[]) => Promise<void>;
@@ -27,7 +23,6 @@ export declare const makeMessagesRecvSocket: (config: SocketConfig) => {
     groupCreate: (subject: string, participants: string[]) => Promise<import("../Types").GroupMetadata>;
     groupLeave: (id: string) => Promise<void>;
     groupUpdateSubject: (jid: string, subject: string) => Promise<void>;
-<<<<<<< HEAD
     groupRequestParticipantsList: (jid: string) => Promise<{
         [key: string]: string;
     }[]>;
@@ -35,8 +30,6 @@ export declare const makeMessagesRecvSocket: (config: SocketConfig) => {
         status: string;
         jid: string;
     }[]>;
-=======
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     groupParticipantsUpdate: (jid: string, participants: string[], action: import("../Types").ParticipantAction) => Promise<{
         status: string;
         jid: string;
@@ -69,11 +62,7 @@ export declare const makeMessagesRecvSocket: (config: SocketConfig) => {
         status: string | undefined;
         setAt: Date;
     } | undefined>;
-<<<<<<< HEAD
     updateProfilePicture: (jid: string, content: import("../Types").WAMediaUpload, custom?: boolean) => Promise<void>;
-=======
-    updateProfilePicture: (jid: string, content: import("../Types").WAMediaUpload) => Promise<void>;
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     removeProfilePicture: (jid: string) => Promise<void>;
     updateProfileStatus: (status: string) => Promise<void>;
     updateProfileName: (name: string) => Promise<void>;
@@ -94,11 +83,7 @@ export declare const makeMessagesRecvSocket: (config: SocketConfig) => {
     addMessageLabel: (jid: string, messageId: string, labelId: string) => Promise<void>;
     removeMessageLabel: (jid: string, messageId: string, labelId: string) => Promise<void>;
     type: "md";
-<<<<<<< HEAD
     ws: import("./Client").MobileSocketClient | import("./Client").WebSocketClient;
-=======
-    ws: import("./mobile-socket").MobileSocket;
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     ev: import("../Types").BaileysEventEmitter & {
         process(handler: (events: Partial<import("../Types").BaileysEventMap>) => void | Promise<void>): () => void;
         buffer(): void;

@@ -1,18 +1,10 @@
 import { Contact } from './Contact';
-<<<<<<< HEAD
 export type GroupParticipant = (Contact & {
-=======
-export declare type GroupParticipant = (Contact & {
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     isAdmin?: boolean;
     isSuperAdmin?: boolean;
     admin?: 'admin' | 'superadmin' | null;
 });
-<<<<<<< HEAD
 export type ParticipantAction = 'add' | 'remove' | 'promote' | 'demote';
-=======
-export declare type ParticipantAction = 'add' | 'remove' | 'promote' | 'demote';
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 export interface GroupMetadata {
     id: string;
     owner: string | undefined;
