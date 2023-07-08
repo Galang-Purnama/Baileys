@@ -12,9 +12,15 @@ export declare const makeChatsSocket: (config: SocketConfig) => {
     }>;
     upsertMessage: (msg: proto.IWebMessageInfo, type: MessageUpsertType) => Promise<void>;
     appPatch: (patchCreate: WAPatchCreate) => Promise<void>;
+<<<<<<< HEAD
+    sendPresenceUpdate: (type: WAPresence, toJid?: string) => Promise<void>;
+    presenceSubscribe: (toJid: string, tcToken?: Buffer) => Promise<void>;
+    profilePictureUrl: (jid: string, type?: 'preview' | 'image', timeoutMs?: number) => Promise<string | undefined>;
+=======
     sendPresenceUpdate: (type: WAPresence, toJid?: string | undefined) => Promise<void>;
     presenceSubscribe: (toJid: string, tcToken?: Buffer | undefined) => Promise<void>;
     profilePictureUrl: (jid: string, type?: 'preview' | 'image', timeoutMs?: number | undefined) => Promise<string | undefined>;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     onWhatsApp: (...jids: string[]) => Promise<{
         exists: boolean;
         jid: string;
@@ -24,7 +30,11 @@ export declare const makeChatsSocket: (config: SocketConfig) => {
         status: string | undefined;
         setAt: Date;
     } | undefined>;
+<<<<<<< HEAD
+    updateProfilePicture: (jid: string, content: WAMediaUpload, custom?: boolean) => Promise<void>;
+=======
     updateProfilePicture: (jid: string, content: WAMediaUpload) => Promise<void>;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     removeProfilePicture: (jid: string) => Promise<void>;
     updateProfileStatus: (status: string) => Promise<void>;
     updateProfileName: (name: string) => Promise<void>;
@@ -39,13 +49,21 @@ export declare const makeChatsSocket: (config: SocketConfig) => {
     getBusinessProfile: (jid: string) => Promise<WABusinessProfile | void>;
     resyncAppState: (collections: readonly ("critical_block" | "critical_unblock_low" | "regular_high" | "regular_low" | "regular")[], isInitialSync: boolean) => Promise<void>;
     chatModify: (mod: ChatModification, jid: string) => Promise<void>;
+<<<<<<< HEAD
+    cleanDirtyBits: (type: 'account_sync' | 'groups', fromTimestamp?: number | string) => Promise<void>;
+=======
     cleanDirtyBits: (type: 'account_sync' | 'groups', fromTimestamp?: string | number | undefined) => Promise<void>;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     addChatLabel: (jid: string, labelId: string) => Promise<void>;
     removeChatLabel: (jid: string, labelId: string) => Promise<void>;
     addMessageLabel: (jid: string, messageId: string, labelId: string) => Promise<void>;
     removeMessageLabel: (jid: string, messageId: string, labelId: string) => Promise<void>;
     type: "md";
+<<<<<<< HEAD
+    ws: import("./Client").MobileSocketClient | import("./Client").WebSocketClient;
+=======
     ws: import("./mobile-socket").MobileSocket;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     ev: import("../Types").BaileysEventEmitter & {
         process(handler: (events: Partial<import("../Types").BaileysEventMap>) => void | Promise<void>): () => void;
         buffer(): void;

@@ -9,7 +9,11 @@ import { Label } from './Label';
 import { LabelAssociation } from './LabelAssociation';
 import { MessageUpsertType, MessageUserReceiptUpdate, WAMessage, WAMessageKey, WAMessageUpdate } from './Message';
 import { ConnectionState } from './State';
+<<<<<<< HEAD
+export type BaileysEventMap = {
+=======
 export declare type BaileysEventMap = {
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     /** connection state has been updated -- WS closed, opened, connecting etc. */
     'connection.update': Partial<ConnectionState>;
     /** credentials updated -- some metadata, keys or something */
@@ -70,6 +74,10 @@ export declare type BaileysEventMap = {
     /** apply an action to participants in a group */
     'group-participants.update': {
         id: string;
+<<<<<<< HEAD
+        actors: string | null | undefined;
+=======
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
         participants: string[];
         action: ParticipantAction;
     };
@@ -88,7 +96,11 @@ export declare type BaileysEventMap = {
         type: 'add' | 'remove';
     };
 };
+<<<<<<< HEAD
+export type BufferedEventData = {
+=======
 export declare type BufferedEventData = {
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     historySets: {
         chats: {
             [jid: string]: Chat;
@@ -143,7 +155,11 @@ export declare type BufferedEventData = {
         [jid: string]: Partial<GroupMetadata>;
     };
 };
+<<<<<<< HEAD
+export type BaileysEvent = keyof BaileysEventMap;
+=======
 export declare type BaileysEvent = keyof BaileysEventMap;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 export interface BaileysEventEmitter {
     on<T extends keyof BaileysEventMap>(event: T, listener: (arg: BaileysEventMap[T]) => void): void;
     off<T extends keyof BaileysEventMap>(event: T, listener: (arg: BaileysEventMap[T]) => void): void;

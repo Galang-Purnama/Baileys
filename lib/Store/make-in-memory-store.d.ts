@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import type KeyedDB from '@adiwajshing/keyed-db';
+=======
 import KeyedDB from '@adiwajshing/keyed-db';
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 import type { Comparable } from '@adiwajshing/keyed-db/lib/Types';
 import type { Logger } from 'pino';
 import { proto } from '../../WAProto';
@@ -7,14 +11,22 @@ import type { BaileysEventEmitter, Chat, ConnectionState, Contact, GroupMetadata
 import { Label } from '../Types/Label';
 import { LabelAssociation } from '../Types/LabelAssociation';
 import { ObjectRepository } from './object-repository';
+<<<<<<< HEAD
+type WASocket = ReturnType<typeof makeMDSocket>;
+=======
 declare type WASocket = ReturnType<typeof makeMDSocket>;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 export declare const waChatKey: (pin: boolean) => {
     key: (c: Chat) => string;
     compare: (k1: string, k2: string) => number;
 };
 export declare const waMessageID: (m: WAMessage) => string;
 export declare const waLabelAssociationKey: Comparable<LabelAssociation, string>;
+<<<<<<< HEAD
+export type BaileysInMemoryStoreConfig = {
+=======
 export declare type BaileysInMemoryStoreConfig = {
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     chatKey?: Comparable<Chat, string>;
     labelAssociationKey?: Comparable<LabelAssociation, string>;
     logger?: Logger;
