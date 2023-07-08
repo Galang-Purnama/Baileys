@@ -1,4 +1,8 @@
 /// <reference types="node" />
+<<<<<<< HEAD
+/// <reference types="node" />
+=======
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 import { Logger } from 'pino';
 import { proto } from '../../WAProto';
 import { AnyMediaMessageContent, AnyMessageContent, MediaGenerationOptions, MessageContentGenerationOptions, MessageGenerationOptions, MessageGenerationOptionsFromContent, MessageUserReceipt, WAMessage, WAMessageContent, WAProto } from '../Types';
@@ -11,13 +15,21 @@ import { MediaDownloadOptions } from './messages-media';
 export declare const extractUrlFromText: (text: string) => string | undefined;
 export declare const generateLinkPreviewIfRequired: (text: string, getUrlInfo: MessageGenerationOptions['getUrlInfo'], logger: MessageGenerationOptions['logger']) => Promise<import("../Types").WAUrlInfo | undefined>;
 export declare const prepareWAMessageMedia: (message: AnyMediaMessageContent, options: MediaGenerationOptions) => Promise<proto.Message>;
+<<<<<<< HEAD
+export declare const prepareDisappearingMessageSettingContent: (ephemeralExpiration?: number) => proto.Message;
+=======
 export declare const prepareDisappearingMessageSettingContent: (ephemeralExpiration?: number | undefined) => proto.Message;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 /**
  * Generate forwarded message content like WA does
  * @param message the message to forward
  * @param options.forceForward will show the message as forwarded even if it is from you
  */
+<<<<<<< HEAD
+export declare const generateForwardMessageContent: (message: WAMessage, forceForward?: boolean) => proto.IMessage;
+=======
 export declare const generateForwardMessageContent: (message: WAMessage, forceForward?: boolean | undefined) => proto.IMessage;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 export declare const generateWAMessageContent: (message: AnyMessageContent, options: MessageContentGenerationOptions) => Promise<proto.Message>;
 export declare const generateWAMessageFromContent: (jid: string, message: WAMessageContent, options: MessageGenerationOptionsFromContent) => proto.WebMessageInfo;
 export declare const generateWAMessage: (jid: string, content: AnyMessageContent, options: MessageGenerationOptions) => Promise<proto.WebMessageInfo>;
@@ -45,7 +57,11 @@ export declare const updateMessageWithReceipt: (msg: Pick<WAMessage, 'userReceip
 export declare const updateMessageWithReaction: (msg: Pick<WAMessage, 'reactions'>, reaction: proto.IReaction) => void;
 /** Update the message with a new poll update */
 export declare const updateMessageWithPollUpdate: (msg: Pick<WAMessage, 'pollUpdates'>, update: proto.IPollUpdate) => void;
+<<<<<<< HEAD
+type VoteAggregation = {
+=======
 declare type VoteAggregation = {
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     name: string;
     voters: string[];
 };
@@ -62,14 +78,22 @@ export declare const aggregateMessageKeysNotFromMe: (keys: proto.IMessageKey[]) 
     participant: string | undefined;
     messageIds: string[];
 }[];
+<<<<<<< HEAD
+type DownloadMediaMessageContext = {
+=======
 declare type DownloadMediaMessageContext = {
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
     reuploadRequest: (msg: WAMessage) => Promise<WAMessage>;
     logger: Logger;
 };
 /**
  * Downloads the given message. Throws an error if it's not a media message
  */
+<<<<<<< HEAD
+export declare const downloadMediaMessage: (message: WAMessage, type: 'buffer' | 'stream', options: MediaDownloadOptions, ctx?: DownloadMediaMessageContext) => Promise<Buffer | import("stream").Transform>;
+=======
 export declare const downloadMediaMessage: (message: WAMessage, type: 'buffer' | 'stream', options: MediaDownloadOptions, ctx?: DownloadMediaMessageContext | undefined) => Promise<Buffer | import("stream").Transform>;
+>>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
 /** Checks whether the given message is a media message; if it is returns the inner content */
 export declare const assertMediaContent: (content: proto.IMessage | null | undefined) => proto.Message.IVideoMessage | proto.Message.IImageMessage | proto.Message.IAudioMessage | proto.Message.IDocumentMessage | proto.Message.IStickerMessage;
 export {};
