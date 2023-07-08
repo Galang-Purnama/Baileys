@@ -56,17 +56,10 @@ getMessage: async (key) => {
             return msg.message || undefined
          }
          return {
-<<<<<<< HEAD
             conversation: "hello, Galang Purnama"
-=======
-            conversation: "hello, i'm Amirul Dev"
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
          }
       },
 // get message diatas untuk mengatasi pesan gagal dikirim, "menunggu pesan", dapat dicoba lagi
 }
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> 2cd4b773e9a4e18575636e02b5e9ea85e544ac1d
+
